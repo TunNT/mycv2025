@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Thành Trung - Backend Developer CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50; /* Professional dark teal color */
+            --secondary-color: #3498db; /* Blue accent color */
+            --text-color: #34495e;
+            --light-gray: #ecf0f1;
+            --border-color: #bdc3c7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1020px;
+            margin: 30px auto;
+            background: #fff;
+            display: flex;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .sidebar {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 30px;
+            width: 35%;
+        }
+
+        .sidebar h1 {
+            font-size: 28px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        .sidebar h2 {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 30px;
+            color: var(--secondary-color);
+        }
+
+        .sidebar h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .contact-info ul {
+            list-style: none;
+        }
+
+        .contact-info li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info i {
+            width: 20px;
+            margin-right: 10px;
+            color: var(--secondary-color);
+        }
+
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding-left: 5px;
+        }
+        
+        .skills-list li {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        
+        .skills-list strong {
+            color: var(--secondary-color);
+        }
+
+        .main-content {
+            padding: 30px;
+            width: 65%;
+        }
+
+        .main-content h2 {
+            font-size: 20px;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .job {
+            margin-bottom: 25px;
+        }
+
+        .job-header h3 {
+            font-size: 18px;
+            color: var(--secondary-color);
+            font-weight: 700;
+        }
+        .job-header p {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 2px solid var(--light-gray);
+        }
+        
+        .project h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .project ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .project li {
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        
+        .tech-stack {
+            margin-top: 10px;
+            font-size: 13px;
+        }
+        .tech-stack span {
+            display: inline-block;
+            background: var(--light-gray);
+            padding: 2px 8px;
+            margin: 2px;
+            border-radius: 4px;
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                margin: 0;
+            }
+            .sidebar, .main-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- ==== LEFT COLUMN (SIDEBAR) ==== -->
+        <aside class="sidebar">
+            <header>
+                <h1>NGUYỄN THÀNH TRUNG</h1>
+                <h2>Backend Developer </h2>
+            </header>
+
+            <section class="section contact-info">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i><a href="tel:0389420092">0847 410 803</a></li>
+                    <li><i class="fas fa-envelope"></i><a href="mailto:nguyenthanhtrungdh99@gmail.com">nguyenthanhtrungdh99@gmail.com</a></li>
+                    <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/thanh-trung-9ba45a334/" target="_blank">linkedin.com/in/trung-it</a></li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h3>Summary</h3>
+                <p>
+                    Backend developer with over 3 years of practical experience in NodeJs, NestJS, 
+                    microservices systems and AWS deployment. Specialized in building modules in the system,
+                    integrating with AI systems. Trained and led small teams. Optimized systems for big data processing
+                </p>
+            </section>
+
+            <section class="section">
+                <h3>Skills</h3>
+                <ul class="skills-list">
+                    <li><strong>Languages:</strong> JavaScript, TypeScript</li>
+                    <li><strong>Frameworks:</strong> Node.js, Express, NestJS</li>
+                    <li><strong>Databases:</strong> PostgreSQL, MongoDB, Redis</li>
+                    <li><strong>DevOps & Cloud:</strong> AWS (EC2, RDS, S3, Cognito), Docker, Nginx</li>
+                    <li><strong>Architecture:</strong> Microservices, RESTful APIs, Message Queues (Kafka), BullMQ</li>
+                    <li><strong>Soft Skills:</strong> Communication, Teamwork, Problem Solving, Critical Thinking, Team Leadership & Mentoring</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h3>Education</h3>
+                <h4>Hue University of Sciences</h4>
+                <p>Bachelor of Information Technology (2017 – 2021)</p>
+            </section>
+        </aside>
+
+        <!-- ==== RIGHT COLUMN (MAIN CONTENT) ==== -->
+        <main class="main-content">
+            <h2>Work Experience</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <h3>D-Soft Joint Stock Company, Da Nang</h3>
+                    <p>Backend Developer | 5/2022 – Present</p>
+                </div>
+
+                <div class="project">
+                    <h4>Project: Prima Pro - Real Estate Platform (04/2025 – Present)</h4>
+                    <ul>
+                        <li>Design service in microservice systems (Chat Service, Reaction & comment Service, File Upload Service, Tracking Service,...) using Nestjs framework.</li>
+                        <li>Deployed and optimized the development environment (Docker, Debug, Setup ENV, Source code), established a complete CI/CD pipeline, organized code reviews, and operated the system and implement system monitoring using Grafana.</li>
+                        <li>Connected Kafka to handle asynchronous data streams, enhancing scalability and reducing latency in communication between services.</li>
+                        <li>Integrated AWS Cognito for secure and efficient user authentication.</li>
+                    </ul>
+                    <p class="tech-stack">
+                        <strong>Tech stack:</strong>
+                        <span>RESTful APIs</span> <span>NestJS</span> <span>BullMQ</span> <span>PostgreSQL</span> <span>MongoDB</span> <span>Kafka</span> <span>Redis</span> <span>AWS (Cognito, S3)</span> <span>Docker</span>
+                    </p>
+                </div>
+
+                <div class="project">
+                    <h4>Project: OCR - The card scanning system stores user information. (1/2024 - 12-2024)</h4>
+                    <ul>
+                        <li>Guide a team, including interns, in the architecture, development, and deployment of a new user management system.</li>
+                        <li>Engineered the system's backend, designing a scalable database schema with TypeORM and robust RESTful APIs.</li>
+                        <li>Optimized system performance by implementing Redis caching and asynchronous job processing with BullMQ.</li>
+                        <li> Integrated a third-party API for real-time data synchronization from card-swiping terminals.</li>
+                    </ul>
+                    <p class="tech-stack">
+                        <strong>Tech stack:</strong>
+                        <span>RESTful APIs</span> <span>typeORM</span> <span>Redis</span> <span>BullMQ</span> <span>AWS(S3)</span>
+                    </p>
+                </div>
+
+                <div class="project">
+                    <h4>Project: AWl - Outsource Project for Japanese Client.  (4-2023 - 12-2023)</h4>
+                    <ul>
+                        <li>Interpreted detailed technical specifications from a Japanese client to architect and develop robust backend services.</li>
+                        <li>Proactively proposed and implemented effective technical solutions to address complex business requirements and integration challenges.</li>
+                        <li>Collaborated closely with the Android development team to design and engineer cohesive RESTful APIs, ensuring seamless integration from both backend and mobile perspectives.</li>
+                        <li>Authored comprehensive technical and API documentation to streamline the development workflow and facilitate efficient integration for the entire team.</li>
+                    </ul>
+                    <p class="tech-stack">
+                        <strong>Tech stack:</strong>
+                        <span>Restful APIs</span> <span>TypeScript</span> <span>typeORM</span> <span>AWS (S3),</span>  <span>Docker</span>
+                    </p>
+                </div>
+
+                <div class="project">
+                    <h4>Project: AD2U - Advertise to users (5-2022 - 1-2023)</h4>
+                    <ul>
+                        <li>Contributed to a product development team by building backend services with NodeJS, Express, and MongoDB.</li>
+                        <li>Translated system requirements into functional APIs and components to serve both web and tablet platforms.</li>
+                        <li>Actively identified performance bottlenecks, proposing and implementing code optimizations to enhance system efficiency and reliability.</li>
+                    </ul>
+                    <p class="tech-stack">
+                        <strong>Tech stack:</strong>
+                        <span>Restful APIs</span> <span>Express.js</span> <span>MongoDB</span> <span>AWS (S3)</span> <span>Docker</span>
+                    </p>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
